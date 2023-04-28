@@ -57,7 +57,7 @@ a.link.link--side-padding17 {
     padding-left: 17px;
 }
 
-svg.icon.icon--y-translated-3 {
+a.link svg.icon.icon--y-translated-3 {
     transform: translateY(3px);
 }
 
