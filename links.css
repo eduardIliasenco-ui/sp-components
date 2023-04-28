@@ -1,0 +1,91 @@
+a.link {
+    all: unset;
+    display: inline-block;
+    height: 56px;
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 56px;
+    color: #4A5359;
+    transition: color 0.3s ease-out, background-color 0.3s ease-out;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+a.link > svg + span, a.link > span + svg {
+    margin-left: 18px;
+}
+
+a.link.link--ghost {
+    background-color: transparent;
+}
+
+a.link.link--white-bg {
+    background-color: #F0F3F3;
+    padding: 0 18px;
+}
+
+a.link.link--bordered {
+    background-color: transparent;
+    padding: 0 18px;
+    border: 1px solid #DE411B;
+    color: #DE411B;
+}
+
+a.link:hover {
+    color: #DE411B;
+}
+
+a.link:focus {
+    background-color: #f0f3f3;
+}
+
+a.link.link--bordered:hover, a.link.link--bordered:focus {
+    background-color: #fdf5f4;
+}
+
+a.link.link--white-bg:focus {
+    color: #4A5359;
+    background-color: #e5e5e5;
+}
+
+a.link.link--side-padding17 {
+    padding-right: 17px;
+    padding-left: 17px;
+}
+
+svg.icon.icon--y-translated-3 {
+    transform: translateY(3px);
+}
+
+section.link-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, [col-start] minmax(10px, 1fr) [col-end]);
+    grid-auto-rows: 1fr;
+    row-gap: 24px;
+    column-gap: 24px;
+}
+
+section.link-row-centered {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    padding: 7px 0;
+    box-sizing: border-box;
+}
+
+@media screen and (min-width: 760px) {
+    section.link-wrapper {
+        grid-template-columns: repeat(3, [col-start] minmax(10px, 1fr) [col-end]);
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    section.link-wrapper {
+        grid-template-columns: repeat(4, [col-start] minmax(100px, 1fr) [col-end]);
+    }
+}
