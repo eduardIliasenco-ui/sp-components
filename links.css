@@ -10,8 +10,11 @@ a.link {
     font-size: 16px;
     line-height: 56px;
     color: #4A5359;
+    -webkit-transition: color 0.3s ease-out, background-color 0.3s ease-out;
+    -o-transition: color 0.3s ease-out, background-color 0.3s ease-out;
     transition: color 0.3s ease-out, background-color 0.3s ease-out;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     cursor: pointer;
 }
 
@@ -58,31 +61,49 @@ a.link.link--side-padding17 {
 }
 
 a.link svg.icon.icon--y-translated-3 {
-    transform: translateY(3px);
+    -webkit-transform: translateY(3px);
+        -ms-transform: translateY(3px);
+            transform: translateY(3px);
 }
 
 section.link-wrapper {
+    display: -ms-grid;
     display: grid;
+    -ms-grid-columns: [col-start] 24px minmax(10px, 1fr) 24px [col-end] 24px [col-start] 24px minmax(10px, 1fr) 24px [col-end];
     grid-template-columns: repeat(2, [col-start] minmax(10px, 1fr) [col-end]);
     grid-auto-rows: 1fr;
     row-gap: 24px;
-    column-gap: 24px;
+    -webkit-column-gap: 24px;
+       -moz-column-gap: 24px;
+            column-gap: 24px;
 }
 
 section.link-row-centered {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     gap: 24px;
     padding: 7px 0;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
 }
 
 /*Tablet*/
 @media screen and (min-width: 760px) {
     section.link-wrapper {
+        -ms-grid-columns: ([col-start] minmax(10px, 1fr) [col-end])[3];
         grid-template-columns: repeat(3, [col-start] minmax(10px, 1fr) [col-end]);
     }
 }
@@ -90,6 +111,7 @@ section.link-row-centered {
 /*Desktop*/
 @media screen and (min-width: 1280px) {
     section.link-wrapper {
+        -ms-grid-columns: ([col-start] minmax(100px, 1fr) [col-end])[4];
         grid-template-columns: repeat(4, [col-start] minmax(100px, 1fr) [col-end]);
     }
 }
