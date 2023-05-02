@@ -401,3 +401,7 @@ div.card-wrapper.card-wrapper--arrowed {
     -ms-flex-pack: justify;
     justify-content: space-between;
 }
+
+.--white-text {
+    color: #fff;
+}
