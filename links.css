@@ -1,4 +1,4 @@
-/*Modile-first*/
+/*Mobile-first*/
 
 a.link {
     all: unset;
@@ -14,11 +14,12 @@ a.link {
     -o-transition: color 0.3s ease-out, background-color 0.3s ease-out;
     transition: color 0.3s ease-out, background-color 0.3s ease-out;
     -webkit-box-sizing: border-box;
-            box-sizing: border-box;
+    box-sizing: border-box;
     cursor: pointer;
 }
 
-a.link > svg + span, a.link > span + svg {
+a.link>svg+span,
+a.link>span+svg {
     margin-left: 18px;
 }
 
@@ -46,7 +47,8 @@ a.link:focus {
     background-color: #f0f3f3;
 }
 
-a.link.link--bordered:hover, a.link.link--bordered:focus {
+a.link.link--bordered:hover,
+a.link.link--bordered:focus {
     background-color: #fdf5f4;
 }
 
@@ -62,8 +64,8 @@ a.link.link--side-padding17 {
 
 a.link svg.icon.icon--y-translated-3 {
     -webkit-transform: translateY(3px);
-        -ms-transform: translateY(3px);
-            transform: translateY(3px);
+    -ms-transform: translateY(3px);
+    transform: translateY(3px);
 }
 
 section.link-wrapper {
@@ -74,8 +76,8 @@ section.link-wrapper {
     grid-auto-rows: 1fr;
     row-gap: 24px;
     -webkit-column-gap: 24px;
-       -moz-column-gap: 24px;
-            column-gap: 24px;
+    -moz-column-gap: 24px;
+    column-gap: 24px;
 }
 
 section.link-row-centered {
@@ -84,20 +86,20 @@ section.link-row-centered {
     display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     gap: 24px;
     padding: 7px 0;
     -webkit-box-sizing: border-box;
-            box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 /*Tablet*/

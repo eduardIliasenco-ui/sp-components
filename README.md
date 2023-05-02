@@ -4,6 +4,8 @@ This repository consists of styled blocks, like
 - Links
 - Sections
 
+## Use styles.css, since it contains all the latest changes
+
 ### Component set appearance
 - Open tiles.html or links.html in your browser (Chrome)
 
