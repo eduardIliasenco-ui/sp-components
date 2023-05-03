@@ -154,6 +154,11 @@ a.card.card--arrowed {
     display: block;
 }
 
+a.card.card--arrowed>div.card-inner>span.card-text {
+    white-space: initial;
+    overflow: initial;
+}
+
 a.card>div.card-inner,
 figure.card.card--figure>div.card-inner {
     display: -webkit-box;
