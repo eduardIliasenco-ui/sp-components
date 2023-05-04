@@ -407,6 +407,12 @@ div.card-wrapper.card-wrapper--arrowed {
         grid-template-columns: repeat(5, [col-start] minmax(100px, 1fr) [col-end]);
     }
 
+    section.card-wrapper.card-wrapper--3col,
+    div.card-wrapper.card-wrapper--3col {
+        -ms-grid-columns: ([col-start] minmax(100px, 1fr) [col-end])[3];
+        grid-template-columns: repeat(3, [col-start] minmax(100px, 1fr) [col-end]);
+    }
+
     /*/Cards*/
 }
 
